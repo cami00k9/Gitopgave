@@ -6,6 +6,7 @@
 
 body {
     margin: 0; /* Ingen kanter i siden af browser */
+    background-color: dodgerblue;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -35,21 +36,48 @@ img {
     height: auto; /* Højden skal tilpasse sig */
 }
 
-.min-div {
-    background-color: #f2f2f2;
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-    font-family: Arial, sans-serif;
-    color: #333;
-    text-align: center;
-    transition: all 0.3s ease-in-out;
+ .Eksempel {
+     width: 550px;
+     height: 200px;
+     background-color: #ffc107;
+     border: 2px solid #000;
+     border-radius: 15px;
+     padding: 20px;
+     margin: 200px auto;
+     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+     text-align: center;
+     color: #000;
+     font-family: Arial, sans-serif;
+     font-size: 24px;
+     line-height: 1.5;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     transform: rotate(-10deg);
+ }
+
+/* Styling af en overskrift inden i div'en */
+.Eksempel h2 {
+    margin-top: 2px;
+    font-size: 36px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-.min-div:hover {
-    transform: scale(1.1);
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
-    background-color: #e6e6e6;
-    color: #555;
+/* Styling af en knap inden i div'en */
+.Eksempel button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
+
+/* Hover-effekt på knappen */
+.Eksempel button:hover {
+    background-color: orange;
+    color: #000;
+}
+
+
